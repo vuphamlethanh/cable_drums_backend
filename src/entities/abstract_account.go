@@ -1,7 +1,7 @@
 package entities
 
 type AbstractAccount struct {
-	AuthId string `gorm:"unique;varchar"`
+	AuthId string `gorm:"unique;type:varchar"`
 }
 
 func NewAbstractAccount(authId string) AbstractAccount {

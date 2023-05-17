@@ -6,7 +6,7 @@ import (
 )
 
 type AbstractBase struct {
-	Id         uuid.UUID `gorm:"primaryKey;varchar"`
+	Id         uuid.UUID `gorm:"primaryKey;type:varchar"`
 	InsertedAt time.Time `gorm:"autoCreateTime"`
 	UpdatedAt  time.Time `gorm:"autoCreateTime"`
 }

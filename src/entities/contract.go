@@ -10,7 +10,7 @@ type Contract struct {
 
 	StartDay      time.Time
 	EndDay        time.Time
-	CableQuantity uint
+	CableQuantity uint `gorm:"type:integer"`
 
 	SupplierId  uuid.UUID
 	CreatedById uuid.UUID

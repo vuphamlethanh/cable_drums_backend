@@ -17,4 +17,6 @@ type Contract struct {
 
 	Supplier  *Supplier
 	CreatedBy *Planner
+
+	WithdrawRequests []WithdrawRequest `gorm:"foreignKey:ContractId"`
 }

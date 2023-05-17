@@ -4,7 +4,8 @@ type Planner struct {
 	AbstractBase
 	AbstractAccount
 
-	Contracts []Contract `gorm:"foreignKey:CreatedById"`
+	Contracts        []Contract        `gorm:"foreignKey:CreatedById"`
+	WithdrawRequests []WithdrawRequest `gorm:"foreignKey:CreatedById"`
 }
 
 func NewPlanner(authId string) *Planner {
